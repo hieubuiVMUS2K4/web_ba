@@ -1,0 +1,84 @@
+/* Thông số đề bài: Khung 770px, Header 40px */
+body { font-family: 'Times New Roman', sans-serif; font-size: 13px; }
+.top-bar { width: 770px; margin: 10px auto; display: flex; justify-content: space-between; }
+
+.container {
+    width: 770px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    min-height: 430px;
+}
+
+.header {
+    width: 100%; /* 770px */
+    height: 40px;
+    background-color: #d0021b; /* Màu đỏ */
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    position: relative;
+}
+/* Tạo mũi tên trang trí ở header nếu cần thiết kế giống hệt ảnh */
+.header:after { content: " *"; }
+
+.product-list {
+    padding: 10px 0 0 5px;
+    overflow: hidden;
+}
+
+.product-item {
+    width: 255px; /* Theo đề */
+    height: 190px;
+    float: left;
+    margin-bottom: 20px;
+    border-right: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.p-img {
+    width: 115px; /* Theo đề */
+    height: 150px;
+    float: left;
+    text-align: center;
+}
+.p-img img { max-width: 100%; max-height: 100%; }
+
+.p-info {
+    width: 125px;
+    float: left;
+    padding-left: 5px;
+}
+.p-name {
+    color: #0066c0;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.p-info p { margin: 3px 0; color: #333; }
+.p-info span { color: red; font-weight: bold; }
+
+.p-action {
+    clear: both;
+    padding-top: 5px;
+    text-align: center;
+}
+.price-tag {
+    background-color: #48adc9; /* Màu giá */
+    color: white;
+    padding: 3px 8px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.detail-btn {
+    background-color: #2d2d2d; /* Màu chi tiết */
+    color: white;
+    text-decoration: none;
+    padding: 3px 8px;
+    font-size: 12px;
+}

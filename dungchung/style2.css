@@ -1,0 +1,65 @@
+/* Thông số đề: Khung 908px, Header 45px, Item 170x245 */
+body { font-family: 'Tahoma', sans-serif; font-size: 13px; }
+.top-bar { width: 908px; margin: 10px auto; display: flex; justify-content: space-between; }
+
+.container {
+    width: 908px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    min-height: 315px;
+}
+
+.header {
+    width: 100%;
+    height: 45px;
+    background-color: #4c8e2a; /* Màu xanh lá */
+    color: white;
+    font-weight: bold;
+    line-height: 45px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between; /* Căn đều các ô */
+}
+
+.item {
+    width: 170px; /* Theo đề */
+    height: 245px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.img-box {
+    width: 160px; /* Theo đề */
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box img { max-width: 100%; max-height: 100%; }
+
+.info-box { margin-top: 10px; }
+.name {
+    display: block;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 5px;
+    height: 30px; /* Giới hạn chiều cao chữ để không vỡ khung */
+    overflow: hidden;
+    font-size: 12px;
+}
+.price {
+    color: #d0021b;
+    font-size: 14px;
+}
